@@ -36,7 +36,7 @@ function App() {
     var scrollLimit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
       document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
     window.scrollTo(0, scrollLimit + 10000);
-    setTimeout(function(){window.scrollTo(0, scrollLimit)}, 10);
+    setTimeout(function(){window.scrollTo(0, scrollLimit)}, 1);
     // setTodos([]);
     // localStorage.setItem('todos', JSON.stringify([]));
   }
