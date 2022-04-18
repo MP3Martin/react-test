@@ -21,7 +21,8 @@ function App() {
     const next = [...todos, todoText.current.value];
     // setTodos(next);
     setTodos([]);
-    localStorage.setItem('todos', JSON.stringify(next));
+    // localStorage.setItem('todos', JSON.stringify(next));
+    localStorage.setItem('todos', JSON.stringify([]));
   }
 
   return (
