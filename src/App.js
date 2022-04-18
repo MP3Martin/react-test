@@ -44,6 +44,13 @@ function App() {
         right:0;
         position:fixed;
         background-color:#ef3520;
+        /* background-color:#0a0a23; */
+        color: #fff;
+        border:none; 
+        border-radius:10px; 
+        padding:15px;
+        min-height:30px; 
+        min-width: 120px;
       }
     }
   `
