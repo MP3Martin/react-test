@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const existingTodos = localStorage.getItem('todos');
     setTodos(existingTodos ? JSON.parse(existingTodos) : []);
-    window.scrollTo(0, 0)
+    window.scrollTo(999999999999, 0)
     console.log("Page loaded")
   }, []);
 
