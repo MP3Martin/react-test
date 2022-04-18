@@ -38,8 +38,19 @@ function App() {
     // localStorage.setItem('todos', JSON.stringify([]));
   }
 
+  const my_css = `
+      #clear-button {
+        top:0;
+        right:0;
+        position:fixed;
+      }
+    }
+  `
+
   return (
     <div>
+      <style>{my_css}</style>
+      
       <ul>
         {todos.map(todo => (<li key={todo}>{todo}</li>))}  
       </ul>
@@ -48,16 +59,6 @@ function App() {
         <input type="text" placeholder="What to add?" name="todo-input" ref={todoText} />
         <input type="submit" value="Submit" />
       </form>
-    
-    
-      <style type="text/css">
-        #clear-button {
-        top:0;
-        right:0;
-        position:fixed;
-        }
-      </style>
-
     </div>
   );
 }
