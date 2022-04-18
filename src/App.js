@@ -48,7 +48,7 @@ function App() {
       buttons: [
         {
           label: 'Yes',
-          setTodos([]);
+          onClick: () => setTodos([])
         },
         {
           label: 'No',
