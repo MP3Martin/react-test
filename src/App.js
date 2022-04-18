@@ -88,6 +88,17 @@ function App() {
         background-color:#526887;
         transition: 0.3s;
       }
+      .__react_component_tooltip {
+      transition: all 0.3s ease-in-out !important;
+      opacity: 0 !important;
+      visibility: visible;
+      }
+      
+      .__react_component_tooltip.show {
+      visibility: visible;
+      opacity: 1 !important;
+      }
+        
   
     }
   `
