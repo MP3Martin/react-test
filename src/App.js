@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
+const messagesEndRef = createRef()
+
 function App() {
 
   // State
@@ -38,9 +40,7 @@ function App() {
         <input type="submit" value="Submit" />
       </form>
 
-    {/*
-    <div ref={dummy_bottom => { this.el = dummy_bottom; }} />
-    */}
+      <div ref={this.messagesEndRef} />
     </div>
   );
 }
