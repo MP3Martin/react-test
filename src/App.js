@@ -53,6 +53,7 @@ function App() {
         min-width:3rem;
         font-size:2rem;
         margin:0.3rem;
+        box-shadow: 0px 0px 0.1px 0.1px rgb(0,0,0);
       }
     }
   `
