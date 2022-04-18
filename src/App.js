@@ -52,7 +52,7 @@ function App() {
         min-height:3rem; 
         min-width:3rem;
         font-size:2rem;
-        margin: 0.1rem;
+        margin:0.1rem;
       }
     }
   `
