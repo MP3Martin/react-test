@@ -11,14 +11,13 @@ function App() {
   const todoText = useRef();
 
   window.onload = function () {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 99999999999999999);
   };
 
   // Side Effects / Lifecycle
   useEffect(() => {
     const existingTodos = localStorage.getItem('todos');
     setTodos(existingTodos ? JSON.parse(existingTodos) : []);
-    window.scrollTo(0, 99999999)
     console.log("Page loaded")
   }, []);
 
@@ -29,6 +28,7 @@ function App() {
     setTodos(next);
     localStorage.setItem('todos', JSON.stringify(next));
     document.getElementsByName("todo-input")[0].value = "";
+    window.scrollTo(0, 99999999999999999);
     // setTodos([]);
     // localStorage.setItem('todos', JSON.stringify([]));
   }
