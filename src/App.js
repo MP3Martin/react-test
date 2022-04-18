@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
-  window.scrollTo(999999999999, document.body.scrollHeight);
+  //window.scrollTo(999999999999, document.body.scrollHeight);
   // State
   const [todos, setTodos] = useState([]);
 
@@ -14,6 +14,7 @@ function App() {
   useEffect(() => {
     const existingTodos = localStorage.getItem('todos');
     setTodos(existingTodos ? JSON.parse(existingTodos) : []);
+    window.scrollTo(0, 0)
     console.log("Page loaded")
   }, []);
 
