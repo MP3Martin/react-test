@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     const existingTodos = localStorage.getItem('todos');
     setTodos(existingTodos ? JSON.parse(existingTodos) : []);
+    console.log("amogus")
   }, []);
 
   // Events
@@ -37,6 +38,9 @@ function App() {
         <input type="submit" value="Submit" />
       </form>
 
+    {/*
+    <div ref={dummy_bottom => { this.el = dummy_bottom; }} />
+    */}
     </div>
   );
 }
