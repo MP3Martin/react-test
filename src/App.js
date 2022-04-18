@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
-
+  console.log("e");
   // State
   const [todos, setTodos] = useState([]);
 
@@ -40,10 +40,7 @@ function App() {
       </form>
     
     <Helmet>
-      <script>
-      //window.scrollTo(999999999999, document.body.scrollHeight);
-      console.log("test")
-      </script>
+      
     </Helmet>
     </div>
   );
