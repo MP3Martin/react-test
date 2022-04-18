@@ -19,10 +19,11 @@ function App() {
   function addTodo(event) {
     event.preventDefault();
     const next = [...todos, todoText.current.value];
-    // setTodos(next);
-    setTodos([]);
-    // localStorage.setItem('todos', JSON.stringify(next));
-    localStorage.setItem('todos', JSON.stringify([]));
+    setTodos(next);
+    localStorage.setItem('todos', JSON.stringify(next));
+    document.getElementsByName("todo-input")[0].value = "";
+    // setTodos([]);
+    // localStorage.setItem('todos', JSON.stringify([]));
   }
 
   return (
@@ -32,7 +33,7 @@ function App() {
       </ul>
 
       <form onSubmit={addTodo}>
-        <input type="text" placeholder="What to add?" ref={todoText} />
+        <input type="text" placeholder="What to add?" name="todo-input" ref={todoText} />
         <input type="submit" value="Submit" />
       </form>
 
