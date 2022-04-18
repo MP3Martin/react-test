@@ -50,7 +50,7 @@ function App() {
   return (
     <div>
       <style>{my_css}</style>
-      <button type="button" id="clear-button">Click Me!</button>
+      <button type="button" id="clear-button">🗑️</button>
       <ul>
         {todos.map(todo => (<li key={todo}>{todo}</li>))}  
       </ul>
