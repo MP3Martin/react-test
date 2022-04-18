@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
-  console.log("e");
+  window.scrollTo(999999999999, document.body.scrollHeight);
   // State
   const [todos, setTodos] = useState([]);
 
