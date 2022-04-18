@@ -105,9 +105,9 @@ function App() {
 
   return (
     <div>
-      <ReactTooltip effect="solid" type="info"/>
+      <ReactTooltip backgroundColor/>
       <style>{my_css}</style>
-      <button type="button" id="clear-button" data-tip="CLEAR THE LIST" onClick={clear_button_actions}>🆑</button>
+      <button type="button" id="clear-button" data-effect="solid" data-type="info" data-tip="CLEAR THE LIST" onClick={clear_button_actions}>🆑</button>
       <ul>
         {todos.map(todo => (<li key={todo}>{todo}</li>))}  
       </ul>
