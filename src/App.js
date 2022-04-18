@@ -19,8 +19,8 @@ function App() {
   function addTodo(event) {
     event.preventDefault();
     const next = [...todos, todoText.current.value];
-    //setTodos(next);
-    setTodos([""]);
+    // setTodos(next);
+    setTodos([]);
     localStorage.setItem('todos', JSON.stringify(next));
   }
 
