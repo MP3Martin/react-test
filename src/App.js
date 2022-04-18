@@ -43,8 +43,8 @@ function App() {
 
   function clear_button_actions() {
     confirmAlert({
-      title: 'Confirm to submit',
-      message: 'Are you sure to do this.',
+      title: 'Confirmation',
+      message: 'Are you sure to clear the list?',
       buttons: [
         {
           label: 'Yes',
