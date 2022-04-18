@@ -52,7 +52,7 @@ function App() {
         },
         {
           label: 'No',
-          onClick: () => alert('Click No')
+          //onClick: () => alert('Click No')
         }
       ]
     });
