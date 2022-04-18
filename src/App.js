@@ -55,6 +55,11 @@ function App() {
         margin:0.3rem;
         box-shadow: 0px 0px 2px 2px rgb(0,0,0);
       }
+      #clear-button:hover {
+        background-color:#345481;
+        transition: 0.4s;
+      }
+  
     }
   `
 
