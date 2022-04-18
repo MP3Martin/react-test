@@ -4,7 +4,6 @@ import './App.css';
 
 
 function App() {
-  //window.scrollTo(999999999999, document.body.scrollHeight);
   // State
   const [todos, setTodos] = useState([]);
 
@@ -12,6 +11,7 @@ function App() {
   const todoText = useRef();
 
   window.onload = function () {
+    console.log("Page loaded")
     var scrollLimit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
       document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
     window.scrollTo(0, scrollLimit);
@@ -21,7 +21,6 @@ function App() {
   useEffect(() => {
     const existingTodos = localStorage.getItem('todos');
     setTodos(existingTodos ? JSON.parse(existingTodos) : []);
-    console.log("Page loaded")
   }, []);
 
   // Events
