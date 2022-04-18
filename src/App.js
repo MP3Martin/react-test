@@ -43,7 +43,7 @@ function App() {
         top:0;
         right:0;
         position:fixed;
-        background-color:#26266e;
+        background-color:#a8c0e2;
         /* background-color:#ef3520; */
         color: #fff;
         border:none; 
@@ -56,7 +56,7 @@ function App() {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
       #clear-button:hover {
-        background-color:#345481;
+        background-color:#6888b3;
         transition: 0.1s;
       }
   
