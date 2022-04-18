@@ -49,9 +49,15 @@ function App() {
         <input type="submit" value="Submit" />
       </form>
     
-    <Helmet>
-      
-    </Helmet>
+    
+      <style type="text/css">
+        #clear-button {
+        top:0;
+        right:0;
+        position:fixed;
+        }
+      </style>
+
     </div>
   );
 }
