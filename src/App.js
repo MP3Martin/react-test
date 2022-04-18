@@ -57,7 +57,7 @@ function App() {
       }
       #clear-button:hover {
         background-color:#345481;
-        transition: 0.4s;
+        transition: 0.1s;
       }
   
     }
