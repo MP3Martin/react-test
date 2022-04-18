@@ -31,6 +31,9 @@ function App() {
     setTodos(next);
     localStorage.setItem('todos', JSON.stringify(next));
     document.getElementsByName("todo-input")[0].value = "";
+    var scrollLimit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+      document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+    window.scrollTo(0, scrollLimit);
     // setTodos([]);
     // localStorage.setItem('todos', JSON.stringify([]));
   }
