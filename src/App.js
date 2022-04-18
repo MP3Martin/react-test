@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import { confirmAlert } from 'react-confirm-alert';
-import 'react-confirm-alert/src/react-confirm-alert.css';
+import './react-confirm-alert.css';
 
 
 function App() {
