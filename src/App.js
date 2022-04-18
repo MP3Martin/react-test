@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import { confirmAlert } from 'react-confirm-alert';
+import ReactTooltip from 'react-tooltip';
 import './more/react-confirm-alert.css';
 
 
@@ -94,7 +95,7 @@ function App() {
   return (
     <div>
       <style>{my_css}</style>
-      <button type="button" id="clear-button" onClick={clear_button_actions}>🆑</button>
+      <button type="button" id="clear-button" data-tip="hello world" onClick={clear_button_actions}>🆑</button>
       <ul>
         {todos.map(todo => (<li key={todo}>{todo}</li>))}  
       </ul>
