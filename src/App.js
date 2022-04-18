@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
 
+var scrollLimit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+  document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+
+
 function App() {
   //window.scrollTo(999999999999, document.body.scrollHeight);
   // State
@@ -11,7 +15,7 @@ function App() {
   const todoText = useRef();
 
   window.onload = function () {
-    window.scrollTo(0, 99999999999999999);
+    window.scrollTo(0, scrollLimit);
   };
 
   // Side Effects / Lifecycle
