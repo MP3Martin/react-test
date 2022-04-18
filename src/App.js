@@ -53,7 +53,7 @@ function App() {
         min-width:3rem;
         font-size:2rem;
         margin:0.3rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
       }
       #clear-button:hover {
         background-color:#6888b3;
