@@ -10,11 +10,15 @@ function App() {
   // Binding
   const todoText = useRef();
 
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
+
   // Side Effects / Lifecycle
   useEffect(() => {
     const existingTodos = localStorage.getItem('todos');
     setTodos(existingTodos ? JSON.parse(existingTodos) : []);
-    window.scrollTo(10, 10)
+    window.scrollTo(0, 99999999)
     console.log("Page loaded")
   }, []);
 
