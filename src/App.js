@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 // eslint-disable-next-line
 import { Helmet } from 'react-helmet';
 import './App.css';
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 
 function App() {
@@ -39,6 +41,23 @@ function App() {
     // localStorage.setItem('todos', JSON.stringify([]));
   }
 
+  function clear_button_actions() {
+    confirmAlert({
+      title: 'Confirm to submit',
+      message: 'Are you sure to do this.',
+      buttons: [
+        {
+          label: 'Yes',
+          onClick: () => alert('Click Yes')
+        },
+        {
+          label: 'No',
+          onClick: () => alert('Click No')
+        }
+      ]
+    });
+  };
+
   const my_css = `
       #clear-button {
         top:0;
@@ -54,7 +73,7 @@ function App() {
         min-width:3rem;
         font-size:2rem;
         margin:0.3rem;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
       }
       #clear-button:hover {
         background-color:#6888b3;
@@ -64,6 +83,10 @@ function App() {
         background-color:#a8c0e2;
         transition: 0.3s;
       }
+      #clear-button:active {
+        background-color:#526887;
+        transition: 0.3s;
+      }
   
     }
   `
@@ -71,7 +94,7 @@ function App() {
   return (
     <div>
       <style>{my_css}</style>
-      <button type="button" id="clear-button">🆑</button>
+      <button type="button" id="clear-button" onClick={clear_button_actions}>🆑</button>
       <ul>
         {todos.map(todo => (<li key={todo}>{todo}</li>))}  
       </ul>
