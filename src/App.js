@@ -94,6 +94,7 @@ function App() {
 
   return (
     <div>
+      <ReactTooltip />
       <style>{my_css}</style>
       <button type="button" id="clear-button" data-tip="hello world" onClick={clear_button_actions}>🆑</button>
       <ul>
