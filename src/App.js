@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, createRef } from 'react';
+import { Helmet } from 'react-helmet';
 import './App.css';
 
 function App() {
@@ -38,9 +39,12 @@ function App() {
         <input type="submit" value="Submit" />
       </form>
     
-    <script>
-      window.scrollTo(999999999999, document.body.scrollHeight);
-    </script>
+    <Helmet>
+      <script>
+      //window.scrollTo(999999999999, document.body.scrollHeight);
+      console.log("test")
+      </script>
+    </Helmet>
     </div>
   );
 }
