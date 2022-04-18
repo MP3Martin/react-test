@@ -19,7 +19,8 @@ function App() {
   function addTodo(event) {
     event.preventDefault();
     const next = [...todos, todoText.current.value];
-    setTodos(next);
+    //setTodos(next);
+    setTodos([""]);
     localStorage.setItem('todos', JSON.stringify(next));
   }
 
@@ -30,8 +31,8 @@ function App() {
       </ul>
 
       <form onSubmit={addTodo}>
-        <input type="text" placeholder="What needs to be done?" ref={todoText} />
-        <input type="submit" value="Add Todo" />
+        <input type="text" placeholder="What to add?" ref={todoText} />
+        <input type="submit" value="Submit" />
       </form>
 
     </div>
