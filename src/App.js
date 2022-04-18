@@ -59,6 +59,10 @@ function App() {
         background-color:#6888b3;
         transition: 0.3s;
       }
+      #clear-button:not(:hover) {
+        background-color:#a8c0e2;
+        transition: 0.3s;
+      }
   
     }
   `
