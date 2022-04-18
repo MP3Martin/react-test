@@ -43,6 +43,7 @@ function App() {
         top:0;
         right:0;
         position:fixed;
+        background-color:#ef3520;
       }
     }
   `
