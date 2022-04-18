@@ -48,7 +48,7 @@ function App() {
         color: #fff;
         border:none; 
         border-radius:10px; 
-        padding:15px;
+        padding:0px;
         min-height:3rem; 
         min-width:3rem;
         font-size:2rem;
