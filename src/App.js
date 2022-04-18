@@ -1,7 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, createRef } from 'react';
 import './App.css';
-
-const messagesEndRef = createRef()
 
 function App() {
 
@@ -15,7 +13,7 @@ function App() {
   useEffect(() => {
     const existingTodos = localStorage.getItem('todos');
     setTodos(existingTodos ? JSON.parse(existingTodos) : []);
-    console.log("amogus")
+    console.log("Page loaded")
   }, []);
 
   // Events
@@ -39,8 +37,10 @@ function App() {
         <input type="text" placeholder="What to add?" name="todo-input" ref={todoText} />
         <input type="submit" value="Submit" />
       </form>
-
-      <div ref={this.messagesEndRef} />
+    
+    <script>
+      window.scrollTo(999999999999, document.body.scrollHeight);
+    </script>
     </div>
   );
 }
