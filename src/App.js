@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, createRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
 
@@ -28,7 +28,6 @@ function App() {
     setTodos(next);
     localStorage.setItem('todos', JSON.stringify(next));
     document.getElementsByName("todo-input")[0].value = "";
-    window.scrollTo(0, 99999999999999999);
     // setTodos([]);
     // localStorage.setItem('todos', JSON.stringify([]));
   }
