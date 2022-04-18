@@ -16,6 +16,7 @@ function App() {
 
   window.onload = function () {
     window.scrollTo(0, scrollLimit);
+    console.log(scrollLimit)
   };
 
   // Side Effects / Lifecycle
