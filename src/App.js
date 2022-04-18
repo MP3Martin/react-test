@@ -49,8 +49,8 @@ function App() {
         border:none; 
         border-radius:10px; 
         padding:15px;
-        min-height:30rem; 
-        min-width: 30rem;
+        min-height:3rem; 
+        min-width: 3rem;
       }
     }
   `
