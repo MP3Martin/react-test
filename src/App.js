@@ -50,8 +50,8 @@ function App() {
         border-radius:10px; 
         padding:15px;
         min-height:3rem; 
-        min-width: 3rem;
-        font-size: 2rem;
+        min-width:3rem;
+        font-size:2rem;
       }
     }
   `
