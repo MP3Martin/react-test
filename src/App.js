@@ -47,6 +47,7 @@ function App() {
   // Events
   function addTodo(event) {
     event.preventDefault();
+    console.log(todoText.current.value);
     const next = [...todos, todoText.current.value];
     setTodos(next);
     localStorage.setItem('todos', JSON.stringify(next));
