@@ -11,16 +11,15 @@ import { Button, TextField, Dialog } from '@material-ui/core';
 
 function App() {
   
-  function AlertDialog() {
-    const [open, setOpen] = React.useState(false);
-  
-    const handleClickOpen = () => {
-      setOpen(true);
-    };
-  
-    const handleClose = () => {
-      setOpen(false);
-    };
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   // State
   const [todos, setTodos] = useState([]);
