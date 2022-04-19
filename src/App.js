@@ -101,6 +101,7 @@ function App() {
 
       .clear-button-data-class {
         font-weight: bold !important;
+        padding:0px;
       }      
   
     }
