@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@ginterdev/use-question": "0.1.0-rc.3"
   }
 }

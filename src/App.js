@@ -5,10 +5,21 @@ import './App.css';
 import { confirmAlert } from 'react-confirm-alert';
 import ReactTooltip from 'react-tooltip';
 import './more/react-confirm-alert.css';
-
+import useQuestion from '@ginterdev/use-question';
+import React from 'react';
 
 
 function App() {
+
+  const { ask,...question } = useQuestion<{ message: string }>();
+
+  const handleClick = React.useCallback(async () => {
+    if (await ask({ message: 'Are you sure you want to do this?' })) {
+      console.log('CONFIRMED ✅');
+    } else {
+      console.log('CANCELLED ❌');
+    }
+  }, [ask]);
 
 
   // State
@@ -124,6 +135,15 @@ function App() {
         <input type="text" placeholder="What to add?" name="todo-input" ref={todoText} />
         <input type="submit" value="Submit" />
       </form>
+      <button onClick={() => handleClick()}>Ask question</button>
+      {question.isActive(question) && (
+        <div>
+          {question.data.message}
+          <hr />
+          <button onClick={() => question.onReject()}>CANCEL</button>
+          <button onClick={() => question.onConfirm()}>CONFIRM</button>
+        </div>
+      )}
     </div>
   );
 }
