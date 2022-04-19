@@ -2,9 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 // eslint-disable-next-line
 import { Helmet } from 'react-helmet';
 import './App.css';
-import { confirmAlert } from 'react-confirm-alert';
-import ReactTooltip from 'react-tooltip';
-import './more/react-confirm-alert.css';
 import React from 'react';
 import { Button, TextField, Dialog, DialogTitle, DialogContentText, DialogContent, DialogActions, Tooltip } from '@material-ui/core';
 
@@ -115,10 +112,9 @@ function App() {
     <div>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-      <ReactTooltip />
       <style>{my_css}</style>
       <Tooltip title="Delete">
-        <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" data-class="clear-button-data-class" onClick={function(event){handleClickOpen(); ReactTooltip.hide();}}>🆑</button>
+        <button type="button" id="clear-button" onClick={function(event){handleClickOpen();}}>🆑</button>
       </Tooltip>
       <Dialog
         open={open}
