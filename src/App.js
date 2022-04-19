@@ -48,9 +48,8 @@ function App() {
   function addTodo(event) {
     event.preventDefault();
 
-    console.log();
     if (String(todoText.current.value) === "") {
-      //  :D
+      //  no input speicified, do nothing
     } else {
       const next = [...todos, todoText.current.value];
       setTodos(next);
