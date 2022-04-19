@@ -47,10 +47,17 @@ function App() {
   // Events
   function addTodo(event) {
     event.preventDefault();
-    console.log(todoText.current.value);
-    const next = [...todos, todoText.current.value];
-    setTodos(next);
-    localStorage.setItem('todos', JSON.stringify(next));
+
+    console.log();
+    if (String(todoText.current.value) == "") {
+      //  :D
+    } else {
+      const next = [...todos, todoText.current.value];
+      setTodos(next);
+      localStorage.setItem('todos', JSON.stringify(next));
+    }
+
+    // clear the input
     document.getElementsByName("todo-input")[0].value = "";
     var scrollLimit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
       document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
