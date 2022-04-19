@@ -7,12 +7,16 @@ import ReactTooltip from 'react-tooltip';
 import './more/react-confirm-alert.css';
 
 
+
 function App() {
+
+
   // State
   const [todos, setTodos] = useState([]);
 
   // Binding
   const todoText = useRef();
+
 
   window.onload = function () {
     console.log("Page loaded")
