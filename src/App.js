@@ -6,7 +6,7 @@ import { confirmAlert } from 'react-confirm-alert';
 import ReactTooltip from 'react-tooltip';
 import './more/react-confirm-alert.css';
 import React from 'react';
-import { Button, TextField, Dialog, DialogTitle, DialogContentText, DialogContent, DialogActions } from '@material-ui/core';
+import { Button, TextField, Dialog, DialogTitle, DialogContentText, DialogContent, DialogActions, Tooltip } from '@material-ui/core';
 
 
 function App() {
