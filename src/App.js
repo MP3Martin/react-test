@@ -107,7 +107,7 @@ function App() {
     <div>
       <ReactTooltip />
       <style>{my_css}</style>
-      <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="<b>CLEAR THE LIST</b>" onClick={clear_button_actions}>🆑</button>
+      <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" onClick={clear_button_actions}>🆑</button>
       <ul>
         {todos.map(todo => (<li key={todo}>{todo}</li>))}  
       </ul>
