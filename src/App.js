@@ -144,7 +144,7 @@ function App() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={function(event){ console.log("amo");}}>Disagree</Button>
+          <Button onClick={function(event){ console.log("amo"); handleClose();}}>Disagree</Button>
 
           <Button onClick={handleClose} autoFocus>Agree</Button>
         </DialogActions>
