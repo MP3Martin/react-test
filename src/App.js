@@ -98,7 +98,10 @@ function App() {
       visibility: visible;
       opacity: 1 !important;
       }
-        
+
+      .clear-button-data-class {
+        font-weight: bold !important;
+      }      
   
     }
   `
@@ -107,7 +110,7 @@ function App() {
     <div>
       <ReactTooltip />
       <style>{my_css}</style>
-      <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" onClick={clear_button_actions}>🆑</button>
+      <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" data-class="clear-button-data-class" onClick={clear_button_actions}>🆑</button>
       <ul>
         {todos.map(todo => (<li key={todo}>{todo}</li>))}  
       </ul>
