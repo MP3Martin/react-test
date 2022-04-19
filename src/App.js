@@ -10,6 +10,12 @@ import { Button, TextField, Dialog, DialogTitle, DialogContentText, DialogConten
 
 
 function App() {
+
+  function clearSelection() {
+  if (window.getSelection) {window.getSelection().removeAllRanges();}
+  else if (document.selection) {document.selection.empty();}
+  }
+
   
   const [open, setOpen] = React.useState(false);
 
@@ -111,7 +117,7 @@ function App() {
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       <ReactTooltip />
       <style>{my_css}</style>
-      <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" data-class="clear-button-data-class" onClick={handleClickOpen}>🆑</button>
+      <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" data-class="clear-button-data-class" onClick={function(event){handleClickOpen(); clearSelection();}}>🆑</button>
       <Dialog
         open={open}
         onClose={handleClose}
