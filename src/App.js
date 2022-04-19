@@ -56,22 +56,6 @@ function App() {
     // localStorage.setItem('todos', JSON.stringify([]));
   }
 
-  function clear_button_actions() {
-    confirmAlert({
-      title: 'Confirmation',
-      message: 'Are you sure to clear the list?',
-      buttons: [
-        {
-          label: 'Yes',
-          onClick: () => setTodos([])
-        },
-        {
-          label: 'No',
-          // onClick: () => alert('Click No')
-        }
-      ]
-    });
-  };
 
   const my_css = `
       #clear-button {
@@ -144,9 +128,9 @@ function App() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={function(event){ console.log("amo"); handleClose();}}>Disagree</Button>
+          <Button onClick={function(event){handleClose();}}>Cancel</Button>
 
-          <Button onClick={handleClose} autoFocus>Agree</Button>
+          <Button onClick={function(event){ setTodos([]); localStorage.setItem('todos', JSON.stringify([])); handleClose();}}>YES</Button>
         </DialogActions>
       </Dialog>
       <ul>
