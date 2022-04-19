@@ -113,7 +113,7 @@ function App() {
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       <style>{my_css}</style>
-      <Tooltip title="Delete">
+      <Tooltip title="Clear the list">
         <button type="button" id="clear-button" onClick={function(event){handleClickOpen();}}>🆑</button>
       </Tooltip>
       <Dialog
