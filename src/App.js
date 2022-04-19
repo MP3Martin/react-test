@@ -118,7 +118,7 @@ function App() {
       <ReactTooltip />
       <style>{my_css}</style>
       <Tooltip title="Delete">
-        button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" data-class="clear-button-data-class" onClick={function(event){handleClickOpen(); ReactTooltip.hide();}}>🆑</button>
+        <button type="button" id="clear-button" data-effect="solid" data-background-color="#d46518" data-type="info" data-tip="CLEAR THE LIST" data-class="clear-button-data-class" onClick={function(event){handleClickOpen(); ReactTooltip.hide();}}>🆑</button>
       </Tooltip>
       <Dialog
         open={open}
