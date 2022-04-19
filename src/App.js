@@ -48,7 +48,7 @@ function App() {
   function addTodo(event) {
     event.preventDefault();
 
-    if (String(todoText.current.value) === "") {
+    if (String(todoText.current.value).replace(/ /g, '') === "") {
       //  no input speicified, do nothing
     } else {
       const next = [...todos, todoText.current.value];
