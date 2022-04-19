@@ -144,10 +144,7 @@ function App() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={() => {
-            {handleClose};
-            console.log("amogus");
-          }}>Disagree</Button>
+          <Button onClick={function(event){ console.log("amo");}}>Disagree</Button>
 
           <Button onClick={handleClose} autoFocus>Agree</Button>
         </DialogActions>
