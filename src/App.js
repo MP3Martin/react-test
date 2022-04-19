@@ -123,7 +123,7 @@ function App() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Are you sure to clear the list?
+            Are you sure to clear ALL of the items in the list?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
