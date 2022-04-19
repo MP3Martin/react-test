@@ -49,7 +49,7 @@ function App() {
     event.preventDefault();
 
     console.log();
-    if (String(todoText.current.value) == "") {
+    if (String(todoText.current.value) === "") {
       //  :D
     } else {
       const next = [...todos, todoText.current.value];
